@@ -16,3 +16,31 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+.nav-images .img{
+    max-height: 260px;
+    width: auto;
+}
+
+.nav-images {
+    display: flex;
+    margin: 10px 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-images .logo .img {
+    width: 200px;
+}
+
+.nav-images .logo {
+        height: 260px;
+    }
+
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
