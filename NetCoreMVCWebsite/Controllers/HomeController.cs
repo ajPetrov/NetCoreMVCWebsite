@@ -18,10 +18,56 @@ namespace NetCoreMVCWebsite.Controllers
             return View();
         }
 
-        public IActionResult Privacy()
+        public IActionResult ForUs()
         {
             return View();
         }
+
+        public IActionResult News()
+        {
+            return View();
+        }
+
+        public IActionResult Newspaper()
+        {
+            return View();
+        }
+
+        public IActionResult Documents()
+        {
+            return View();
+        }
+
+        public IActionResult Reception()
+        {
+            return View();
+        }
+
+        public IActionResult ForYou()
+        {
+            return View();
+        }
+
+        public IActionResult Projects()
+        {
+            return View();
+        }
+
+        public IActionResult Materials()
+        {
+            return View();
+        }
+
+        public IActionResult Gallery()
+        {
+            return View();
+        }
+
+        public IActionResult Contacts()
+        {
+            return View();
+        }
+
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
