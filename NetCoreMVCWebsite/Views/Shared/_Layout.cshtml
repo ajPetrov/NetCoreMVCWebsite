@@ -9,64 +9,38 @@
     <link rel="stylesheet" href="~/NetCoreMVCWebsite.styles.css" asp-append-version="true" />
 </head>
 <body>
-    <header>
         <div class="nav-images">
             <div class="logo">
                 <img src="~/MyStaticFiles/images/logo_pg_dimitrovgrad.jpg" class="img" alt="logo" />
             </div>
             <img src="~/MyStaticFiles/images/nav-gallery-1.jpg" class="img" alt="gallery" />
         </div>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container-fluid">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Начало</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="ForUs">За нас</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="News">Новини</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Newspaper">Вестник</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Documents">Документи</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Reception">Прием</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="ForYou">За вас<br />зрелостници</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Projects">Проекти</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Materials">Материали<br />за ученици</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Gallery">Галерия</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Contacts">Контакти</a>
-                        </li>
-                    </ul>
-                    <partial name="_LoginPartial" />
-                </div>
-            </div>
-        </nav>
-    </header>
+        <ul class="dropdown-ul">
+            <li><a  asp-area="" asp-controller="Home" asp-action="Index">Начало</a></li>
+            <li class="dropdown-li">
+                <a class="dropdown-li-a" asp-area="" asp-controller="Home" asp-action="ForUs">За нас</a>
+                <ul class="dropdown">
+                     <li><a  asp-area="" asp-controller="Home" asp-action="Index">Химн на ЕГ</a></li>
+                     <li><a  asp-area="" asp-controller="Home" asp-action="Index">История на училището</a></li>
+                     <li><a  asp-area="" asp-controller="Home" asp-action="Index">Ученически училищен парламент</a></li>
+                     <li><a  asp-area="" asp-controller="Home" asp-action="Index">Кой е д-р Иван Богоров?</a></li>
+                     <li><a  asp-area="" asp-controller="Home" asp-action="Index">Колектив</a></li>
+                </ul>
+            </li>
+            <li><a  asp-area="" asp-controller="Home" asp-action="News">Новини</a></li>
+            <li><a  asp-area="" asp-controller="Home" asp-action="Newspaper">Вестник</a></li>
+            <li><a  asp-area="" asp-controller="Home" asp-action="Documents">Документи</a></li>
+            <li><a  asp-area="" asp-controller="Home" asp-action="Reception">Прием</a></li>
+            <li><a class="no-line-height"  asp-area="" asp-controller="Home" asp-action="ForYou">За вас<br />зрелостници</a></li>
+            <li><a  asp-area="" asp-controller="Home" asp-action="Projects">Проекти</a></li>
+            <li><a  class="no-line-height" asp-area="" asp-controller="Home" asp-action="Materials">Материали<br />за ученици</a></li>
+            <li><a  asp-area="" asp-controller="Home" asp-action="Gallery">Галерия</a></li>
+            <li><a  asp-area="" asp-controller="Home" asp-action="Contacts">Контакти</a></li>          
+    </ul>
     <div class="container">
         <partial name="_SideMenuPartial" />
+        
         <main role="main" class="main">
-            
             @RenderBody()
         </main>
     </div>
