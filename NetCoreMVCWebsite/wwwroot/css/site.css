@@ -21,14 +21,9 @@ body {
     margin-bottom: 60px;
     background: #F4F4F4;
     width: 67%;
-    display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
-}
-
-.container-fluid {
-    padding: 0;
 }
 
 .nav-images .img{
@@ -49,20 +44,11 @@ body {
 }
 
 .nav-images .logo {
-        height: 260px;
-    }
-
-
-header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    height: 260px;
 }
 
 .container {
     display: flex;
-    align-items: center;
     padding: 0;
 }
 
@@ -100,11 +86,204 @@ header {
     min-height: 400px;
 }
 
-body > .navbar {
-    margin: 0 0 10px;
-    background: blue;
-}
-
 .boldText {
     font-weight: 600;
+}
+.dropdown {
+    margin: 0;
+    padding: 0;
+}
+.dropdown-ul {
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin: 0 0 10px 0;
+    list-style: none;
+    background: white;
+}
+
+    .dropdown-ul li {
+        display: inline-block;
+        position: relative;
+        text-align: left;
+        height: 58px;
+        align-content: center;
+        
+    }
+
+        .dropdown-ul li a {
+            display: block;
+            padding: 5px 10px;
+            color: green;
+            height: 100%;
+            text-decoration: none;
+            text-align: center;
+            line-height: 48px;
+        }
+        .dropdown-ul li .no-line-height {
+            line-height: 24px;
+}
+
+        .dropdown-ul li .dropdown {
+            width: max-content; /* Set width of the dropdown */
+            background: green;
+            color: white;
+            display: none;
+            position: absolute;
+            z-index: 999;
+            left: 0;
+            height: 24px;
+        }
+
+        .dropdown-ul li:hover ul.dropdown {
+            display: block; /* Display the dropdown */
+
+        }
+
+        .dropdown-ul li .dropdown:hover, .dropdown-ul .dropdown-li:hover {
+            background-color: green;
+            /*TOTO Add color not only BG color*/
+        }
+
+        .dropdown-ul li a:hover {
+            color: white;
+            text-decoration: underline;
+            background: green;
+        }
+
+        .dropdown-ul li:hover a {
+            background: green;
+            color: white;
+        }
+
+    .dropdown-ul ul.dropdown li a {
+        background: green;
+        color: white;
+        text-align: left;
+        line-height: normal;
+        
+    }
+
+    .dropdown-ul li ul.dropdown li {
+        display: block;
+        height: 40px
+    }
+.grid_18 img {
+    border: 1px solid #c9c9c9;
+    padding: 5px;
+    padding-bottom: 30px;
+    background: #F5F5F5;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+* {
+    font-family: 'Exo 2', sans-serif;
+}
+
+a {
+    color: #006609;
+    text-decoration: none;
+}
+a:hover {
+    color: #006609;
+    text-decoration: underline;
+}
+.grid_18 {
+    width: 720px;
+    color: #000;
+}
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+h3 {
+    font-size: 1.17em;
+    font-weight: bold;
+}
+h4 {
+    display: block;
+    margin-block-start: 1.33em;
+    margin-block-end: 1.33em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+* {
+    font-family: 'Exo 2', sans-serif;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    clear: left;
+}
+.more_images {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    width: 750px;
+}
+    .more_images ul {
+        padding: 0px;
+        list-style-type: none;
+        margin: 0px;
+    }
+
+.more_images ul li {
+    float: left;
+    margin-right: 10px;
+    border: 0px !important;
+    padding: 0px !important;
+    padding-bottom: 0px !important;
+    background: #FFF !important;
+    margin-right: 5px !important;
+    margin-bottom: 5px !important;
+    width: 150px;
+    float: left;
+}
+
+.more_images ul {
+    padding: 0px;
+    list-style-type: none;
+    margin: 0px;
+}
+.footer-personal {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background: #FFF;
+    height: 50px;
+    line-height: 33px;
+    margin-top: 10px;
+    padding: 10px;
+}
+.map {
+    width: 60%;
+    height: 350px;
+    position: relative;
+    overflow: hidden;
+}
+.grid .review ul li {
+    border: 1px solid #c9c9c9;
+    padding: 5px;
+    padding-bottom: 10px;
+    background: #F5F5F5;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    width: 120px;
+    float: left;
+    display: table;
 }

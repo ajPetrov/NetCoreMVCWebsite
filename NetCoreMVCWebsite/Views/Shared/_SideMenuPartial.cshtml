@@ -1,5 +1,6 @@
 ﻿<div class="side-menu-wrapper">
     <ul>
+       
         <li>
             <img src="~/MyStaticFiles/images/youtube-logo.png" class="img" alt="youtube logo" />
         </li>
@@ -7,10 +8,11 @@
             <img src="~/MyStaticFiles/images/facebook.png" class="img" alt="facebook logo" />
         </li>
         <li class="links">
-            <a href>Горещо от пресата</a>
+            <a  asp-area="" asp-controller="Home" asp-action="HotLinks">Горещо от пресата</a>
         </li>
         <li class="links">
-            <a href>Полезни връзки</a>
+             <a  asp-area="" asp-controller="Home" asp-action="Links">Полезни връзки</a>
         </li>
     </ul>
+    <partial name="_LoginPartial" />
 </div>
