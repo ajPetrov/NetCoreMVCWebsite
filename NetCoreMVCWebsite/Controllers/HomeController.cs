@@ -38,7 +38,7 @@ namespace NetCoreMVCWebsite.Controllers
             return View();
         }
 
-        public IActionResult Reception()
+        public IActionResult Admissions()
         {
             return View();
         }
@@ -68,6 +68,40 @@ namespace NetCoreMVCWebsite.Controllers
             return View();
         }
 
+        public IActionResult SchoolHistory()
+        {
+            return View();
+        }
+
+        public IActionResult WhoIsBogorov()
+        {
+            return View();
+        }
+
+        public IActionResult SchoolCouncel()
+        {
+            return View();
+        }
+
+        public IActionResult Anthem()
+        {
+            return View();
+        }
+
+        public IActionResult Team()
+        {
+            return View();
+        }
+
+        public IActionResult Links()
+        {
+            return View();
+        }
+
+        public IActionResult HotLinks()
+        {
+            return View();
+        }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()

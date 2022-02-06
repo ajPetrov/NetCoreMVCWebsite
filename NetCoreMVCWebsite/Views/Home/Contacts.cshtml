@@ -2,19 +2,50 @@
     ViewData["Title"] = "Контакти";
 }
 <h2>За контакти с нас</h2>
+<div style="float:left; width:40%">  
+    <p>ПЕГ "Д-р Иван Богоров "/ Dr. Ivan Bogorov Foreign Language High School</p>
 
-<p>ПЕГ "Д-р Иван Богоров "/ Dr. Ivan Bogorov Foreign Language High School</p>
-
-<p><span class="boldText">Адрес/ Аddress:</span></p>
+<p><strong>Адрес/ Аddress:</strong></p>
 
 <p>бул. Христо Ботев 45 / Hristo Botev,Bul. 45</p>
 
 <p>гр. Димитровград/ Dimitrovgrad</p>
 
-<p><span class="boldText">тел./ tel:</span> 0391/ 2 55 25</p>
+<p><strong>тел./ tel:</strong> 0391/ 2 55 25</p>
 
-<p><span class="boldText">факс/ fax:</span> 0391/ 2 55 25</p>
+<p><strong>факс/ fax:</strong> 0391/ 2 55 25</p>
 
-<p><span class="boldText">e- mail:</span> krasikrastev@abv.bg</p>
+<p><strong>e- mail:</strong> krasikrastev@abv.bg</p>
 
-<p><span class="boldText">website:</span> www.eg-dg-bg.com</p>
+<p><strong>website:</strong> www.eg-dg-bg.com</p>
+
+    </div> 
+    <div id="myDiv" class="map"></div>  
+      
+    <script type="text/javascript">  
+        function DisplayGoogleMap() {  
+  
+            //Set the Latitude and Longitude of the Map  
+            var myAddress = new google.maps.LatLng(42.05164922476089, 25.57981134815701);  
+  
+            //Create Options or set different Characteristics of Google Map  
+            var mapOptions = {  
+                center: myAddress,  
+                zoom: 15,  
+                minZoom: 15,  
+                mapTypeId: google.maps.MapTypeId.ROADMAP  
+            };  
+  
+            //Display the Google map in the div control with the defined Options  
+            var map = new google.maps.Map(document.getElementById("myDiv"), mapOptions);  
+  
+            //Set Marker on the Map  
+            var marker = new google.maps.Marker({  
+                position: myAddress,  
+                animation: google.maps.Animation.BOUNCE,  
+            });  
+  
+            marker.setMap(map);  
+           }      
+           DisplayGoogleMap();
+    </script>  
